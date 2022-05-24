@@ -9,3 +9,14 @@ html, body #root {
   background-color: #efefef;
   height: 100%;
 }
+
+.navbar-light .navbar-toggler-icon{
+  background-image: url('./img/menu.svg') !important;
+}
+
+@media (max-width: 768px) {
+  .margin-bottom-mob {
+    margin-bottom: 1em;
+  }
+
+}

@@ -1,7 +1,7 @@
 //General
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
 
 // Pages
 import Home from "./components/pages/Home";
@@ -11,8 +11,8 @@ import Projects from "./components/pages/Projects";
 import NewProject from "./components/pages/NewProject";
 
 // layout 
-import NavTop from './components/layout/NavTop'
-import Footer from './components/layout/Footer'
+import NavTop from './components/layout/NavTop';
+import Footer from './components/layout/Footer';
 
 
 function App() {

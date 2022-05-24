@@ -2,7 +2,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import './modules/NavTop.module.css';
 import styles from './modules/NavTop.module.css';
 import { Link } from 'react-router-dom';
-import logo from '../../img/costs_logo.png';
+import logo from '../../img/costs_logo.png'
+import { FaBars} from 'react-icons/fa';;
 function NavTop(){
     return (
         <Navbar className="justify-content-end" bg="dark" 

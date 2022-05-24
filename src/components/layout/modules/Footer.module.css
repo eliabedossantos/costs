@@ -1,0 +1,11 @@
+.socialMediaIcon{
+    font-size: 1.8em;
+    color: white;
+    margin-right: .2em;
+}
+:is(.socialMediaIcon, .LinkFooter):hover{
+    color: #ffbb33 !important;
+}
+.LinkFooter{
+    color: white;
+}
