@@ -1,0 +1,16 @@
+.text__bold{
+    font-weight: bold;
+    color: #ffbb33 !important;
+    background-color: #212529;
+    padding: .2em;
+}
+
+.text__description{
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .link__newProject{
+        margin-bottom: 3em;
+    }
+}
