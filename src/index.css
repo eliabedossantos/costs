@@ -14,6 +14,12 @@ html, body #root {
   background-image: url('./img/menu.svg') !important;
 }
 
+@media (min-width: 992px) {
+  section{
+    min-height: 80vh;
+  }
+}
+
 @media (max-width: 768px) {
   .margin-bottom-mob {
     margin-bottom: 1em;
