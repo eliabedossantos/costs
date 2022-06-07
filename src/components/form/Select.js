@@ -8,7 +8,7 @@ function Select({text, name, options, handleOnChange, value}){
                 {
                     options.map((option, index) => {
                         return(
-                            <option key={index} value={option}>{option}</option>
+                            <option key={index} value={option.id}>{option.name}</option>
                         );
                     }
                 )}

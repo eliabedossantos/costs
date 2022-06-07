@@ -18,7 +18,7 @@ function NewProject(){
             <Container>
                 <Row>
                     <Col className={`d-flex justify-content-center`}>
-                        <h1>Criar Projeto</h1>
+                        <h1>Create Project</h1>
                     </Col>
                 </Row>
                 <Row className='mt-4'>
@@ -31,7 +31,7 @@ function NewProject(){
                         </div>
                     </Col>
                     <Col md={7}>
-                        <ProjectForm />
+                        <ProjectForm btnText="Create Project" />
                     </Col>
                 </Row>
             </Container>

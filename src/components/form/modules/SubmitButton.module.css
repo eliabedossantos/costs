@@ -1,0 +1,18 @@
+.submitButton{
+    display: flex;
+    width: 11em;
+    height: 3em;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffbb34;
+    text-transform: uppercase;
+    background-color: #212529;
+    margin-top: 2em;
+}
+.submitButton:hover{
+    background-color: #ffbb34;
+    color: #212529;
+    transition: all 0.3s ease-in-out;
+}
