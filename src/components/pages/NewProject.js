@@ -1,6 +1,6 @@
 //General
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
 // Layout
 import { Container, Row, Col } from 'react-bootstrap';
 import LinkButton from '../layout/LinkButton';
@@ -13,6 +13,45 @@ import styles from './modules/NewProject.module.css';
 import project from '../../img/project.png';
 
 function NewProject(){
+    const navigate = useNavigate();
+
+    function createPost(project){
+
+        //initialize cost and services
+        project.cost = 0;
+        project.services = [];
+
+        //create post
+        fetch("http://localhost:5000/projects", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(project)
+        })
+        .then(resp => resp.json())
+        .then((data) => {
+            console.log(data);
+            // redirect to project page
+            navigate('/my-projects', {message: 'Project created successfully'});
+            Swal.fire({
+                title: 'Sucess',
+                text: 'Project created successfully',
+                icon: 'success',
+                confirmButtonText: 'OK!'
+            })
+        })
+        .catch((err) => {
+            console.log(err);
+            Swal.fire({
+                title: 'Error!',
+                text: 'error creating project',
+                icon: 'error',
+                confirmButtonText: 'OK!'
+            })
+        })
+    }
+
     return (
         <section className="NewProject py-5">
             <Container>
@@ -31,7 +70,7 @@ function NewProject(){
                         </div>
                     </Col>
                     <Col md={7}>
-                        <ProjectForm btnText="Create Project" />
+                        <ProjectForm handleSubmit={createPost} btnText="Create Project" />
                     </Col>
                 </Row>
             </Container>

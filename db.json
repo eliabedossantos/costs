@@ -1,6 +1,33 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "category": {
+        "id": "1",
+        "name": "Infrastructure"
+      },
+      "projectName": "teste",
+      "totalValue": "23",
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "projectName": "manedidfj",
+      "totalValue": "2323012",
+      "category": {
+        "id": "4",
+        "name": "Management"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
   "categories": [
+    {
+      "id": 0,
+      "name": ""
+    },
     {
       "id": 1,
       "name": "Infrastructure"
@@ -22,6 +49,4 @@
       "name": "Maintenance"
     }
   ]
-
-  
 }
